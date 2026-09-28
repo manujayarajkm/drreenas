@@ -38,7 +38,7 @@ export const AboutSection: React.FC = () => {
               {/* Main Image */}
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 bg-slate-900">
                 <img
-                  src="/images/archived_info_block.jpg"
+                  src={`${import.meta.env.BASE_URL}images/archived_info_block.jpg`}
                   alt="Dr. Reena Riyaz & Dental Clinic operatory"
                   className="w-full h-[440px] sm:h-[500px] object-cover object-center"
                 />

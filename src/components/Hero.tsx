@@ -121,11 +121,11 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick }) => {
               {/* Main Image Frame */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-1 ring-slate-900/10 dark:ring-slate-800 bg-slate-900">
                 <img
-                  src="/images/archived_info_block.jpg"
+                  src={`${import.meta.env.BASE_URL}images/archived_info_block.jpg`}
                   alt="Dr. Reena's Dental Surgery Clinic"
                   className="w-full h-[400px] sm:h-[460px] object-cover object-center transform transition-transform duration-700 hover:scale-105"
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = "/images/archived_slider_bg.jpg";
+                    (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}images/archived_slider_bg.jpg`;
                   }}
                 />
                 

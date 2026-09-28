@@ -96,7 +96,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onBookClick }) => {
           >
             <div className="relative flex items-center justify-center h-11 w-11 rounded-xl bg-gradient-to-tr from-sky-600 to-cyan-500 text-white shadow-md shadow-sky-500/25 group-hover:scale-105 transition-transform overflow-hidden">
               <img
-                src="/images/archived_logo.jpg"
+                src={`${import.meta.env.BASE_URL}images/archived_logo.jpg`}
                 alt="Dr. Reena's Logo"
                 className="h-full w-full object-cover mix-blend-luminosity opacity-90 group-hover:opacity-100 transition-opacity"
                 onError={(e) => {
